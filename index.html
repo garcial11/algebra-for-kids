@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Algebra with Fun Themes!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Algebra Adventures with Fun Themes!</h1>
+        </header>
+
+        <section id="introduction">
+            <h2>Introduction to Algebra</h2>
+            <p>Welcome to the world of algebra! Imagine you're solving puzzles in <b>Zelda</b> or using strategy in <b>Yu-Gi-Oh!</b> Math can help you become a master at these games and more!</p>
+        </section>
+
+        <section id="simple-equations">
+            <h2>Simple Equations</h2>
+            <p>Let’s start with something simple. Imagine you're playing soccer for <b>Croatia</b> and you scored <b>x</b> goals. If the total score is 5, how many goals did you score?</p>
+
+            <label for="simpleAnswer">x + 2 = 5. What is x?</label>
+            <input type="number" id="simpleAnswer" placeholder="Enter your answer">
+            <button onclick="checkSimple()">Check Answer</button>
+            <p id="simpleFeedback"></p>
+        </section>
+
+        <section id="more-complex-equations">
+            <h2>More Complex Equations</h2>
+            <p>Now you're on a mission with <b>Real Madrid</b>. You need to figure out how many assists you made. The formula is <b>2x + 4 = 12</b>. How many assists did you make?</p>
+
+            <label for="complexAnswer">2x + 4 = 12. What is x?</label>
+            <input type="number" id="complexAnswer" placeholder="Enter your answer">
+            <button onclick="checkComplex()">Check Answer</button>
+            <p id="complexFeedback"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
