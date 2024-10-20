@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Adventures with Fun Themes! (Page 2)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>More Algebra Adventures! (Page 2)</h1>
+        </header>
+
+        <section id="intermediate-equations">
+            <h2>Yu-Gi-Oh: Intermediate Algebra Problems</h2>
+            <img src="images/yugioh.jpg" alt="Yu-Gi-Oh" class="theme-image">
+
+            <!-- Problem 21 -->
+            <p>21. In Yu-Gi-Oh!, your monster has an attack power of <b>x</b>. After an increase of 8, its attack power becomes 20. What was the original attack power?</p>
+            <label for="problem21">x + 8 = 20. What is x?</label>
+            <input type="number" id="problem21" placeholder="Enter your answer">
+            <button onclick="checkAnswer(12, 'problem21', 'feedback21')">Check Answer</button>
+            <p id="feedback21"></p>
+
+            <!-- Problem 22 -->
+            <p>22. You're summoning a monster in Yu-Gi-Oh! The monster's health is <b>x</b> after it gets a 10-point boost, making the total health 30. What was the original health?</p>
+            <label for="problem22">x + 10 = 30. What is x?</label>
+            <input type="number" id="problem22" placeholder="Enter your answer">
+            <button onclick="checkAnswer(20, 'problem22', 'feedback22')">Check Answer</button>
+            <p id="feedback22"></p>
+
+            <!-- Problem 23 -->
+            <p>23. Your monster starts with <b>x</b> defense points and loses 5 points. Now it has 10 defense points left. What was the original defense?</p>
+            <label for="problem23">x - 5 = 10. What is x?</label>
+            <input type="number" id="problem23" placeholder="Enter your answer">
+            <button onclick="checkAnswer(15, 'problem23', 'feedback23')">Check Answer</button>
+            <p id="feedback23"></p>
+
+            <!-- Problem 24 -->
+            <p>24. A spell card boosts your monster's attack by 7, giving it <b>x</b> points. After the boost, the total attack points are 22. How many points did your monster have originally?</p>
+            <label for="problem24">x + 7 = 22. What is x?</label>
+            <input type="number" id="problem24" placeholder="Enter your answer">
+            <button onclick="checkAnswer(15, 'problem24', 'feedback24')">Check Answer</button>
+            <p id="feedback24"></p>
+
+            <!-- Problem 25 -->
+            <p>25. You use a trap card that takes away 9 points from your opponent's monster, leaving it with <b>x</b> attack points. Now it has 11 attack points. How many did it have originally?</p>
+            <label for="problem25">x - 9 = 11. What is x?</label>
+            <input type="number" id="problem25" placeholder="Enter your answer">
+            <button onclick="checkAnswer(20, 'problem25', 'feedback25')">Check Answer</button>
+            <p id="feedback25"></p>
+
+            <!-- Problem 26 -->
+            <p>26. A monster starts with <b>x</b> health and loses 6 points in battle, now it has 14 health left. What was its original health?</p>
+            <label for="problem26">x - 6 = 14. What is x?</label>
+            <input type="number" id="problem26" placeholder="Enter your answer">
+            <button onclick="checkAnswer(20, 'problem26', 'feedback26')">Check Answer</button>
+            <p id="feedback26"></p>
+
+            <!-- Problem 27 -->
+            <p>27. A spell card adds <b>x</b> points to your defense. You now have 17 defense points after a 7-point boost. How many did you start with?</p>
+            <label for="problem27">x + 7 = 17. What is x?</label>
+            <input type="number" id="problem27" placeholder="Enter your answer">
+            <button onclick="checkAnswer(10, 'problem27', 'feedback27')">Check Answer</button>
+            <p id="feedback27"></p>
+
+            <!-- Problem 28 -->
+            <p>28. You start with <b>x</b> magic points and lose 8 in battle, now you have 10 points left. What was your starting amount?</p>
+            <label for="problem28">x - 8 = 10. What is x?</label>
+            <input type="number" id="problem28" placeholder="Enter your answer">
+            <button onclick="checkAnswer(18, 'problem28', 'feedback28')">Check Answer</button>
+            <p id="feedback28"></p>
+
+            <!-- Problem 29 -->
+            <p>29. A monster's attack is boosted by <b>x</b> points, and now it has 21 points. If the boost was 5 points, what was the original attack?</p>
+            <label for="problem29">x + 5 = 21. What is x?</label>
+            <input type="number" id="problem29" placeholder="Enter your answer">
+            <button onclick="checkAnswer(16, 'problem29', 'feedback29')">Check Answer</button>
+            <p id="feedback29"></p>
+
+            <!-- Problem 30 -->
+            <p>30. Your monster has <b>x</b> defense points and takes 7 damage, leaving it with 12 defense. How many points did it start with?</p>
+            <label for="problem30">x - 7 = 12. What is x?</label>
+            <input type="number" id="problem30" placeholder="Enter your answer">
+            <button onclick="checkAnswer(19, 'problem30', 'feedback30')">Check Answer</button>
+            <p id="feedback30"></p>
+
+            <!-- Problem 31 -->
+            <p>31. You summon a monster with <b>x</b> attack points. After gaining 4 more points, it now has 16. What was the original attack?</p>
+            <label for="problem31">x + 4 = 16. What is x?</label>
+            <input type="number" id="problem31" placeholder="Enter your answer">
+            <button onclick="checkAnswer(12, 'problem31', 'feedback31')">Check Answer</button>
+            <p id="feedback31"></p>
+
+            <!-- Problem 32 -->
+            <p>32. Your opponent's monster loses <b>x</b> defense points after an attack. Now it has 13 points left, but originally had 18. How many points did it lose?</p>
+            <label for="problem32">x = 18 - 13. What is x?</label>
+            <input type="number" id="problem32" placeholder="Enter your answer">
+            <button onclick="checkAnswer(5, 'problem32', 'feedback32')">Check Answer</button>
+            <p id="feedback32"></p>
+
+            <!-- Problem 33 -->
+            <p>33. A trap card reduces your opponent's attack by 6 points. Now it has <b>x</b> points left, and had 15 before. How many does it have left?</p>
+            <label for="problem33">15 - 6 = x. What is x?</label>
+            <input type="number" id="problem33" placeholder="Enter your answer">
+            <button onclick="checkAnswer(9, 'problem33', 'feedback33')">Check Answer</button>
+            <p id="feedback33"></p>
+
+            <!-- Problem 34 -->
+            <p>34. You summon a monster with <b>x</b> defense points. It gains 8 points from a spell card, and now has 24 defense. How many points did it have initially?</p>
+            <label for="problem34">x + 8 = 24. What is x?</label>
+            <input type="number" id="problem34" placeholder="Enter your answer">
+            <button onclick="checkAnswer(16, 'problem34', 'feedback34')">Check Answer</button>
+            <p id="feedback34"></p>
+
+            <!-- Problem 35 -->
+            <p>35. Your monster loses 7 attack points, leaving it with 14 attack points. How many did it have before losing the points?</p>
+            <label for="problem35">x - 7 = 14. What is x?</label>
+            <input type="number" id="problem35" placeholder="Enter your answer">
+            <button onclick="checkAnswer(21, 'problem35', 'feedback35')">Check Answer</button>
+            <p id="feedback35"></p>
+
+            <!-- Problem 36 -->
+            <p>36. You activate a spell that adds <b>x</b> attack points to your monster. After the boost, it now has 23 points. If the spell gave 7 points, how many did it originally have?</p>
+            <label for="problem36">x + 7 = 23. What is x?</label>
+            <input type="number" id="problem36" placeholder="Enter your answer">
+            <button onclick="checkAnswer(16, 'problem36', 'feedback36')">Check Answer</button>
+            <p id="feedback36"></p>
+
+            <!-- Problem 37 -->
+            <p>37. Your monster loses 6 defense points during a battle, leaving it with 8 points. How many did it start with?</p>
+            <label for="problem37">x - 6 = 8. What is x?</label>
+            <input type="number" id="problem37" placeholder="Enter your answer">
+            <button onclick="checkAnswer(14, 'problem37', 'feedback37')">Check Answer</button>
+            <p id="feedback37"></p>
+
+            <!-- Problem 38 -->
+            <p>38. You summon a monster with <b>x</b> attack points, and it gains 5 more. Now it has 25 attack points. How many did it originally have?</p>
+            <label for="problem38">x + 5 = 25. What is x?</label>
+            <input type="number" id="problem38" placeholder="Enter your answer">
+            <button onclick="checkAnswer(20, 'problem38', 'feedback38')">Check Answer</button>
+            <p id="feedback38"></p>
+
+            <!-- Problem 39 -->
+            <p>39. Your opponent's monster loses 4 defense points, leaving it with 12 defense points. How many points did it originally have?</p>
+            <label for="problem39">x - 4 = 12. What is x?</label>
+            <input type="number" id="problem39" placeholder="Enter your answer">
+            <button onclick="checkAnswer(16, 'problem39', 'feedback39')">Check Answer</button>
+            <p id="feedback39"></p>
+
+            <!-- Problem 40 -->
+            <p>40. You have <b>x</b> health points and gain 6 more. Now you have 18 points. How many did you have originally?</p>
+            <label for="problem40">x + 6 = 18. What is x?</label>
+            <input type="number" id="problem40" placeholder="Enter your answer">
+            <button onclick="checkAnswer(12, 'problem40', 'feedback40')">Check Answer</button>
+            <p id="feedback40"></p>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button onclick="window.location.href='index.html'">Previous Page</button>
+                <button onclick="window.location.href='page3.html'">Next Page</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,27 +1,13 @@
-// Function to check answer for the simple equation x + 2 = 5
-function checkSimple() {
-    const answer = document.getElementById("simpleAnswer").value;
-    const feedback = document.getElementById("simpleFeedback");
+// Function to check if the answer is correct
+function checkAnswer(correctAnswer, inputId, feedbackId) {
+    const userAnswer = document.getElementById(inputId).value;
+    const feedback = document.getElementById(feedbackId);
 
-    if (answer == 3) {
-        feedback.textContent = "Correct! You scored 3 goals for Croatia!";
+    if (parseInt(userAnswer) === correctAnswer) {
+        feedback.textContent = "Correct! Great job!";
         feedback.style.color = "green";
     } else {
-        feedback.textContent = "Try again! Remember, x + 2 = 5.";
-        feedback.style.color = "red";
-    }
-}
-
-// Function to check answer for the complex equation 2x + 4 = 12
-function checkComplex() {
-    const answer = document.getElementById("complexAnswer").value;
-    const feedback = document.getElementById("complexFeedback");
-
-    if (answer == 4) {
-        feedback.textContent = "Correct! You made 4 assists for Real Madrid!";
-        feedback.style.color = "green";
-    } else {
-        feedback.textContent = "Try again! Remember, 2x + 4 = 12.";
+        feedback.textContent = "Try again! Keep going!";
         feedback.style.color = "red";
     }
 }

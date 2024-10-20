@@ -3,38 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Algebra with Fun Themes!</title>
+    <title>Algebra Adventures with Fun Themes!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Algebra Adventures with Fun Themes!</h1>
+            <h1>Algebra Adventures with Fun Themes, Matias! (Page 1)</h1>
         </header>
 
-        <section id="introduction">
-            <h2>Introduction to Algebra</h2>
-            <p>Welcome to the world of algebra! Imagine you're solving puzzles in <b>Zelda</b> or using strategy in <b>Yu-Gi-Oh!</b> Math can help you become a master at these games and more!</p>
-        </section>
-
         <section id="simple-equations">
-            <h2>Simple Equations</h2>
-            <p>Let’s start with something simple. Imagine you're playing soccer for <b>Croatia</b> and you scored <b>x</b> goals. If the total score is 5, how many goals did you score?</p>
+            <h2>Zelda: Basic Algebra Problems</h2>
+            <img src="images/zelda.jpg" alt="Zelda" class="theme-image">
 
-            <label for="simpleAnswer">x + 2 = 5. What is x?</label>
-            <input type="number" id="simpleAnswer" placeholder="Enter your answer">
-            <button onclick="checkSimple()">Check Answer</button>
-            <p id="simpleFeedback"></p>
-        </section>
+            <!-- Problem 1 -->
+            <p>1. In Zelda, you need to find how many rupees you have. If you started with <b>x</b> rupees and now have 7 after finding 3 more, what is x?</p>
+            <label for="problem1">x + 3 = 7. What is x?</label>
+            <input type="number" id="problem1" placeholder="Enter your answer">
+            <button onclick="checkAnswer(4, 'problem1', 'feedback1')">Check Answer</button>
+            <p id="feedback1"></p>
 
-        <section id="more-complex-equations">
-            <h2>More Complex Equations</h2>
-            <p>Now you're on a mission with <b>Real Madrid</b>. You need to figure out how many assists you made. The formula is <b>2x + 4 = 12</b>. How many assists did you make?</p>
+            <!-- Problem 2 -->
+            <p>2. You're playing as Link, and you have a weapon with <b>x</b> power. If the power increases by 5 to become 12, what was the starting power?</p>
+            <label for="problem2">x + 5 = 12. What is x?</label>
+            <input type="number" id="problem2" placeholder="Enter your answer">
+            <button onclick="checkAnswer(7, 'problem2', 'feedback2')">Check Answer</button>
+            <p id="feedback2"></p>
 
-            <label for="complexAnswer">2x + 4 = 12. What is x?</label>
-            <input type="number" id="complexAnswer" placeholder="Enter your answer">
-            <button onclick="checkComplex()">Check Answer</button>
-            <p id="complexFeedback"></p>
+            <!-- Problem 3 -->
+            <p>3. Link collects x more arrows, now he has 15. How many did he collect if he had 10 before?</p>
+            <label for="problem3">10 + x = 15. What is x?</label>
+            <input type="number" id="problem3" placeholder="Enter your answer">
+            <button onclick="checkAnswer(5, 'problem3', 'feedback3')">Check Answer</button>
+            <p id="feedback3"></p>
+
+            <!-- Problem 4 -->
+            <p>4. You need to solve a puzzle in Zelda! You have <b>x</b> bombs and collect 4 more. Now you have 12. How many bombs did you have initially?</p>
+            <label for="problem4">x + 4 = 12. What is x?</label>
+            <input type="number" id="problem4" placeholder="Enter your answer">
+            <button onclick="checkAnswer(8, 'problem4', 'feedback4')">Check Answer</button>
+            <p id="feedback4"></p>
+
+            <!-- Problem 5 -->
+            <p>5. You're defending Hyrule with <b>x</b> shields. After losing 3 shields, you have 7 left. How many did you start with?</p>
+            <label for="problem5">x - 3 = 7. What is x?</label>
+            <input type="number" id="problem5" placeholder="Enter your answer">
+            <button onclick="checkAnswer(10, 'problem5', 'feedback5')">Check Answer</button>
+            <p id="feedback5"></p>
+
+            <!-- Problem 6 -->
+            <p>6. Link starts with <b>x</b> magic points and loses 5. He now has 8 magic points. How many did he have to begin with?</p>
+            <label for="problem6">x - 5 = 8. What is x?</label>
+            <input type="number" id="problem6" placeholder="Enter your answer">
+            <button onclick="checkAnswer(13, 'problem6', 'feedback6')">Check Answer</button>
+            <p id="feedback6"></p>
+
+            <!-- Problem 7 -->
+            <p>7. You have <b>x</b> arrows in your quiver and find 10 more. Now you have 18 arrows. How many did you start with?</p>
+            <label for="problem7">x + 10 = 18. What is x?</label>
+            <input type="number" id="problem7" placeholder="Enter your answer">
+            <button onclick="checkAnswer(8, 'problem7', 'feedback7')">Check Answer</button>
+            <p id="feedback7"></p>
+
+            <!-- Problem 8 -->
+            <p>8. Zelda has <b>x</b> rupees and spends 6 on supplies. Now she has 14 rupees left. How many rupees did she have originally?</p>
+            <label for="problem8">x - 6 = 14. What is x?</label>
+            <input type="number" id="problem8" placeholder="Enter your answer">
+            <button onclick="checkAnswer(20, 'problem8', 'feedback8')">Check Answer</button>
+            <p id="feedback8"></p>
+
+            <!-- Problem 9 -->
+            <p>9. Link starts with <b>x</b> bombs. He uses 3 bombs to fight monsters and has 9 left. How many did he start with?</p>
+            <label for="problem9">x - 3 = 9. What is x?</label>
+            <input type="number" id="problem9" placeholder="Enter your answer">
+            <button onclick="checkAnswer(12, 'problem9', 'feedback9')">Check Answer</button>
+            <p id="feedback9"></p>
+
+            <!-- Problem 10 -->
+            <p>10. You have <b>x</b> pieces of armor and lose 7. Now you have 13 pieces of armor. How many did you have to start with?</p>
+            <label for="problem10">x - 7 = 13. What is x?</label>
+            <input type="number" id="problem10" placeholder="Enter your answer">
+            <button onclick="checkAnswer(20, 'problem10', 'feedback10')">Check Answer</button>
+            <p id="feedback10"></p>
+
+            <!-- Problem 11 -->
+            <p>11. Zelda starts with <b>x</b> arrows. She finds 4 more and now has 17. How many arrows did she have originally?</p>
+            <label for="problem11">x + 4 = 17. What is x?</label>
+            <input type="number" id="problem11" placeholder="Enter your answer">
+            <button onclick="checkAnswer(13, 'problem11', 'feedback11')">Check Answer</button>
+            <p id="feedback11"></p>
+
+            <!-- Problem 12 -->
+            <p>12. Link starts with <b>x</b> magic points and gains 5, now he has 15. How many did he have before?</p>
+            <label for="problem12">x + 5 = 15. What is x?</label>
+            <input type="number" id="problem12" placeholder="Enter your answer">
+            <button onclick="checkAnswer(10, 'problem12', 'feedback12')">Check Answer</button>
+            <p id="feedback12"></p>
+
+            <!-- Problem 13 -->
+            <p>13. Zelda has <b>x</b> gold pieces and spends 8. Now she has 12 left. How much gold did she have before?</p>
+            <label for="problem13">x - 8 = 12. What is x?</label>
+            <input type="number" id="problem13" placeholder="Enter your answer">
+            <button onclick="checkAnswer(20, 'problem13', 'feedback13')">Check Answer</button>
+            <p id="feedback13"></p>
+
+            <!-- Problem 14 -->
+            <p>14. Link starts with <b>x</b> shields and gains 6. Now he has 11. How many shields did he have to begin with?</p>
+            <label for="problem14">x + 6 = 11. What is x?</label>
+            <input type="number" id="problem14" placeholder="Enter your answer">
+            <button onclick="checkAnswer(5, 'problem14', 'feedback14')">Check Answer</button>
+            <p id="feedback14"></p>
+
+            <!-- Problem 15 -->
+            <p>15. Zelda finds <b>x</b> swords in a treasure chest. After finding 7 more, she has 18. How many swords were in the chest?</p>
+            <label for="problem15">x + 7 = 18. What is x?</label>
+            <input type="number" id="problem15" placeholder="Enter your answer">
+            <button onclick="checkAnswer(11, 'problem15', 'feedback15')">Check Answer</button>
+            <p id="feedback15"></p>
+
+            <!-- Problem 16 -->
+            <p>16. Link starts with <b>x</b> potions and gives 3 to a villager. Now he has 8. How many did he have to start with?</p>
+            <label for="problem16">x - 3 = 8. What is x?</label>
+            <input type="number" id="problem16" placeholder="Enter your answer">
+            <button onclick="checkAnswer(11, 'problem16', 'feedback16')">Check Answer</button>
+            <p id="feedback16"></p>
+
+            <!-- Problem 17 -->
+            <p>17. Zelda starts with <b>x</b> hearts and gains 2 more, now she has 14. How many hearts did she have originally?</p>
+            <label for="problem17">x + 2 = 14. What is x?</label>
+            <input type="number" id="problem17" placeholder="Enter your answer">
+            <button onclick="checkAnswer(12, 'problem17', 'feedback17')">Check Answer</button>
+            <p id="feedback17"></p>
+
+            <!-- Problem 18 -->
+            <p>18. Link starts with <b>x</b> health potions. He loses 4 potions and now has 10. How many did he start with?</p>
+            <label for="problem18">x - 4 = 10. What is x?</label>
+            <input type="number" id="problem18" placeholder="Enter your answer">
+            <button onclick="checkAnswer(14, 'problem18', 'feedback18')">Check Answer</button>
+            <p id="feedback18"></p>
+
+            <!-- Problem 19 -->
+            <p>19. Zelda has <b>x</b> rupees and spends 3 on potions. Now she has 7 rupees left. How many did she have before?</p>
+            <label for="problem19">x - 3 = 7. What is x?</label>
+            <input type="number" id="problem19" placeholder="Enter your answer">
+            <button onclick="checkAnswer(10, 'problem19', 'feedback19')">Check Answer</button>
+            <p id="feedback19"></p>
+
+            <!-- Problem 20 -->
+            <p>20. Link starts with <b>x</b> magic spells. After gaining 4 more, he now has 20 spells. How many spells did he have to start with?</p>
+            <label for="problem20">x + 4 = 20. What is x?</label>
+            <input type="number" id="problem20" placeholder="Enter your answer">
+            <button onclick="checkAnswer(16, 'problem20', 'feedback20')">Check Answer</button>
+            <p id="feedback20"></p>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button onclick="window.location.href='page2.html'">Next Page</button>
+            </div>
         </section>
     </div>
 
